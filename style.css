@@ -56,10 +56,24 @@ h1, h2, h3, h4, h5, h6,
     padding-inline: 95px;
 }
 
+.header-logo {
+    width: 100px;
+    height: 30px;
+}
+
 .header-menu-list {
     display: flex;
     column-gap: 35px;
     list-style: none;
+    padding: 0;
+}
+
+.header-menu-link {
+    font-size: 15px;
+}
+
+.header-info-link {
+    font-size: 19px;
 }
 
 .link {
@@ -77,4 +91,16 @@ h1, h2, h3, h4, h5, h6,
     display: flex;
     align-items: center;
     column-gap: 7px;
+}
+
+@media (max-width: 998px) {
+    .header {
+        flex-wrap: wrap;
+    }
+    .header-menu {
+        order: 1;
+
+    }
+    .header-menu-list {
+    }
 }
