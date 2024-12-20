@@ -1,45 +1,144 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Passion</title>
+
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <title>Henrik</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="header-logo">
-            <img class="header-logo-image" src="./images/logo.png" alt="Henrik">
-        </a>
-        <nav class="header-menu">
-            <ul class="header-menu-list">
-                <li class="header-menu-item">
-                    <a href="#" class="header-menu-link link is-current">Главная</a>
-                </li>
-                <li class="header-menu-item">
-                    <a href="#" class="header-menu-link link">Страницы</a>
-                </li>
-                <li class="header-menu-item">
-                    <a href="#" class="header-menu-link link">Магазин</a>
-                </li>
-                <li class="header-menu-item">
-                    <a href="#" class="header-menu-link link">Блог</a>
-                </li>
-                <li class="header-menu-item">
-                    <a href="#" class="header-menu-link link">Видео</a>
-                </li>
-                <li class="header-menu-item">
-                    <a href="#" class="header-menu-link link">Новое</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header-info">
-            <a href="#" class="header-info-link link">Инфо</a>
-            <img src="./icons/circle.svg" alt="icon" class="header-info-icon">
+<header class="header">
+    <a class="header-logo" href="#">
+        <img class="header-logo-img" src="./images/logo.png" alt="sports passion logo">
+        <p class="header-logo-text">sport passion</p>
+    </a>
+    <nav class="header-nav">
+        <ul class="header-nav-list">
+            <li class="header-nav-element">
+                <a href="#">Главная</a>
+            </li>
+            <li class="header-nav-element">
+                <a href="#about">О нас</a>
+            </li>
+            <li class="header-nav-element">
+                <a href="#discounts">Скидки</a>
+            </li>
+            <li class="header-nav-element">
+                <a href="#products">Товары</a>
+            </li>
+            <li class="header-nav-element">
+                <a href="#contact">Связаться с нами</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="about section" id="about">
+        <div class="container">
+            <h1 class="container-title">О нас</h1>
+            <p>Добро пожаловать в SportPassion! Мы являемся универсальным центром для удовлетворения всех ваших спортивных потребностей. Качество продукции и удовлетворенность клиентов - наши приоритеты.</p>
         </div>
-    </header>
+        <div class="about-banner">
+            <img class="about-banner-img" src="./images/banner.png" alt="banner">
+        </div>
+    </section>
+
+    <section class="discount section" id="discounts">
+        <div class="container">
+            <h2 class="container-title">Скидки</h2>
+            <ul>
+                <li>До 70% для зимних спортивных курток</li>
+                <li>20% для всех спортивных лыж</li>
+                <li>15% для новых клиентов.</li>
+                <li>10% скидки при предъявлении фитнес-трекера с более 10 000 шагов в день.</li>
+            </ul>
+        </div>
+        <div class="discount-banner">
+            <img class="discount-banner-img" src="./images/discount.jpg" alt="banner">
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="box-container">
+            <div class="box">
+                <div class="img">
+                    <img class="product-img" src="./images/lizhi.jpg" alt="лыжи">
+                </div>
+                <div class="info">
+                    <h3 class="title">Лыжи</h3>
+                    <div class="details">
+                        <div class="price">32000 руб. - <span>40000 руб.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="img">
+                    <img class="product-img" src="./images/kurtka.jpg" alt="куртка">
+                </div>
+                <div class="info">
+                    <h3 class="title">Куртка</h3>
+                    <div class="details">
+                        <div class="price">15000 руб. - <span>20000 руб.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="img">
+                    <img class="product-img" src="./images/konki.jpg" alt="коньки">
+                </div>
+                <div class="info">
+                    <h3 class="title">Коньки</h3>
+                    <div class="details">
+                        <div class="price">12000 руб.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="img">
+                    <img class="product-img" src="./images/ledyanki.jpg" alt="ледянки">
+                </div>
+                <div class="info">
+                    <h3 class="title">Ледянки</h3>
+                    <div class="details">
+                        <div class="price">500 руб.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <div class="img">
+                    <img class="product-img" src="./images/myach.jpg" alt="мяч">
+                </div>
+                <div class="info">
+                    <h3 class="title">Мяч</h3>
+                    <div class="details">
+                        <div class="price">1000 руб.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2>Связаться с нами</h2>
+            <p>Email: info@sportpassion.ru</p>
+            <p>Телефон: +7 (555) 123-4567</p>
+            <p>Адрес: Ул. Тельмана 21, г. Ульяновск</p>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Sports Passion</p>
+</footer>
 </body>
 </html>
